@@ -1,0 +1,160 @@
+.projects-section {
+    padding: 100px 20px;
+    background: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-head {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.project-head .subheading {
+    display: inline-block;
+    color: #81d742;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.project-head h2 {
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff; /* fixed: heading should be visible on black bg */
+}
+
+/* Using CSS Columns for Masonry Layout */
+.project-grid {
+    column-count: 2; /* Number of columns */
+    column-gap: 30px; /* Gap between columns */
+    column-width: 300px; /* Minimum width of the columns */
+}
+
+.project-item {
+    break-inside: avoid; /* Prevents items from breaking across columns */
+    margin-bottom: 30px; /* Spacing between items */
+}
+
+/* Alternate heights for masonry effect */
+.project-item:nth-child(odd) .project-thumb img {
+    height: 400px; /* Taller cards */
+}
+
+.project-item:nth-child(even) .project-thumb img {
+    height: 500px; /* Shorter cards */
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-thumb img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.project-item:hover .project-thumb img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.project-content .category {
+    display: block;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.project-content h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    max-width: 200px;
+}
+
+/* Better arrow style */
+.project-icon {
+    font-size: 1.5rem;
+    background-color: #81d742;
+    color: #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.project-icon span{
+    transform: rotate(-45deg);
+}
+.project-icon {
+
+    transition: all 0.3s ease;
+    background-color: rgb(29, 29, 29);
+    min-width: 60px;
+    height: 60px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: 0.4s;
+    color: #fff;
+}
+.project-icon:hover {
+    color: #fff;
+    background: #81d742;
+}
+
+.more-work {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.more-work a {
+    text-decoration: none;
+    background: #81d742;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.more-work a:hover {
+    background: #fff;
+    color: #81d742;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 767px) {
+    .project-grid {
+        column-count: 1; /* Stack the items in 1 column on small screens */
+    }
+
+    .project-item:nth-child(odd) .project-thumb img,
+    .project-item:nth-child(even) .project-thumb img {
+        height: 220px;
+    }
+}
