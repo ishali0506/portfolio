@@ -1,8 +1,13 @@
 import React from "react";
 import "./Projects.css";
-import todoProjectImage from '../../src/assets/todo_project.png';
+import todoProjectImage from '../../src/assets/react_task_manager.png';
 import mernProject from '../../src/assets/mern_stack_blog_platform.png';
 import wordpressProject from '../../src/assets/wordpress_custom_theme.png';
+import shopifyProject from '../../src/assets/shopify_custom.png';
+import mobileProject from '../../src/assets/mobile-design-1.png';
+import microProject from '../../src/assets/miro-frontend-new.png';
+
+
 
 
 const projects = [
@@ -31,21 +36,21 @@ const projects = [
     id: 4,
     title: "Shopify E-commerce Store",
     category: "Shopify Development",
-    image: todoProjectImage,
+    image: shopifyProject,
     link: "/portfolio/shopify-store",
   },
   {
     id: 5,
     title: "Micro Frontend Dashboard",
     category: "Micro Frontend (React + Module Federation)",
-    image: todoProjectImage,
+    image: microProject,
     link: "/portfolio/microfrontend-dashboard",
   },
   {
     id: 6,
     title: "Responsive Portfolio Website",
     category: "Frontend Design (React + CSS)",
-    image: todoProjectImage,
+    image: mobileProject,
     link: "/portfolio/responsive-portfolio",
   },
 ];
