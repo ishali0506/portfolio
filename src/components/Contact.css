@@ -1,13 +1,13 @@
 /* General Contact Section Styles */
 #contact {
-    background-color: #1c1c1c;
+    background-color: #000;
     padding: 80px 20px;
     color: #fff;
     text-align: center;
   }
   
   .contact-container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: #333;
     padding: 40px;
@@ -17,7 +17,7 @@
   
   .contact-title {
     font-size: 2.5rem;
-    color: #81d742;
+    color: #c9f31d;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -58,13 +58,13 @@
   .contact-form input:focus,
   .contact-form textarea:focus {
     outline: none;
-    border-color: #81d742;
+    border-color: #c9f31d;
   }
   
   .submit-button {
     padding: 14px 30px;
-    background-color: #81d742;
-    color: #fff;
+    background-color: #c9f31d;
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -88,7 +88,7 @@
   .status-message {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #81d742;
+    color: #c9f31d;
   }
   
   /* Contact Cards */
@@ -114,7 +114,7 @@
   
   .card h3 {
     font-size: 1.5rem;
-    color: #81d742;
+    color: #c9f31d;
     margin-bottom: 10px;
   }
   
@@ -124,7 +124,7 @@
   }
   
   .card a {
-    color: #81d742;
+    color: #c9f31d;
     text-decoration: none;
   }
   
@@ -147,6 +147,13 @@
     .contact-form input,
     .contact-form textarea {
       width: 100%;
+    }
+    #contact {
+      background-color: #000;
+      padding: 60px 15px;
+    }
+    .contact-container {
+      padding: 20px;
     }
   }
   

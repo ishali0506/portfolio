@@ -1,48 +1,52 @@
 import React from "react";
 import "./Projects.css";
+import todoProjectImage from '../../src/assets/todo_project.png';
+import mernProject from '../../src/assets/mern_stack_blog_platform.png';
+import wordpressProject from '../../src/assets/wordpress_custom_theme.png';
+
 
 const projects = [
   {
     id: 1,
-    title: "Brand Identity & Motion Design",
-    category: "Product Design",
-    image: "https://matias-react-js.netlify.app/assets/pro1-4e06b6ed.png",
-    link: "/portfolio",
+    title: "React Task Manager App",
+    category: "React.js Project",
+    image: todoProjectImage,
+    link: "/portfolio/react-task-manager",
   },
   {
     id: 2,
-    title: "Design & Branding Mockup",
-    category: "Product Design",
-    image: "https://matias-react-js.netlify.app/assets/pro1-4e06b6ed.png",
-    link: "/portfolio",
+    title: "MERN Stack Blog Platform",
+    category: "MERN Fullstack",
+    image: mernProject,
+    link: "/portfolio/mern-blog",
   },
   {
     id: 3,
-    title: "Mobile Application Development",
-    category: "UI/UX Design",
-    image: "https://matias-react-js.netlify.app/assets/pro1-4e06b6ed.png",
-    link: "/portfolio",
+    title: "Custom WordPress Theme",
+    category: "WordPress Development",
+    image: wordpressProject,
+    link: "/portfolio/wordpress-theme",
   },
   {
     id: 4,
-    title: "Website UI Design",
-    category: "UI/UX Design",
-    image: "https://matias-react-js.netlify.app/assets/pro1-4e06b6ed.png",
-    link: "/portfolio",
+    title: "Shopify E-commerce Store",
+    category: "Shopify Development",
+    image: todoProjectImage,
+    link: "/portfolio/shopify-store",
   },
   {
     id: 5,
-    title: "Dashboard Design",
-    category: "UI/UX Design",
-    image: "https://matias-react-js.netlify.app/assets/pro1-4e06b6ed.png",
-    link: "/portfolio",
+    title: "Micro Frontend Dashboard",
+    category: "Micro Frontend (React + Module Federation)",
+    image: todoProjectImage,
+    link: "/portfolio/microfrontend-dashboard",
   },
   {
     id: 6,
-    title: "E-commerce Design",
-    category: "UI/UX Design",
-    image: "https://matias-react-js.netlify.app/assets/pro1-4e06b6ed.png",
-    link: "/portfolio",
+    title: "Responsive Portfolio Website",
+    category: "Frontend Design (React + CSS)",
+    image: todoProjectImage,
+    link: "/portfolio/responsive-portfolio",
   },
 ];
 
@@ -56,32 +60,30 @@ const Projects = () => {
         </div>
 
         <div className="project-grid">
-          {projects.map((project) => (
-            <div
-              className={`project-item ${
-                project.id % 2 === 0 ? "small" : "large"
-              }`} // Fix here: swap "large" and "small"
-              key={project.id}
-            >
-              <div className="project-thumb">
-                <img src={project.image} alt={project.title} />
+          {projects.map((project, index) => {
+            const sizeClass = index < 3 ? "small" : "large";
+            return (
+              <div className={`project-item ${sizeClass}`} key={project.id}>
+                <div className="project-thumb">
+                  <img src={project.image} alt={project.title} />
+                </div>
+                <div className="project-content">
+                  <a href={project.link}>
+                    <span className="category">{project.category}</span>
+                    <h3>{project.title}</h3>
+                  </a>
+                  <a href={project.link} className="project-icon">
+                    <span>→</span>
+                  </a>
+                </div>
               </div>
-              <div className="project-content">
-                <a href={project.link}>
-                  <span className="category">{project.category}</span>
-                  <h3>{project.title}</h3>
-                </a>
-                <a href={project.link} className="project-icon">
-              <span>    → </span>
-                </a>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="more-work">
           <a href="/portfolio">
-            <span>Click More Work →</span>
+            Click More Work <span className="arrow">→</span>
           </a>
         </div>
       </div>

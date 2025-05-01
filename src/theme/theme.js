@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const theme = {
   colors: {
-    primary: "#81d742",  // Greenish
+    primary: "#c9f31d",  // Greenish
     dark: "#000",        // Black
     light: "#fff",       // White
     secondary: "#3a3a3a", // Dark gray

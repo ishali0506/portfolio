@@ -19,7 +19,7 @@
   
   .footer__title {
     font-size: 3rem;
-    color: #81d742;
+    color: #c9f31d;
     margin-bottom: 1.5rem;
     font-weight: 700;
   }
@@ -45,7 +45,7 @@
   .footer__email {
     display: inline-block;
     font-size: 1.2rem;
-    color: #81d742;
+    color: #c9f31d;
     text-decoration: none;
     margin-top: 1rem;
     font-weight: 600;
@@ -54,7 +54,7 @@
   }
   
   .footer__email:hover {
-    border-color: #81d742;
+    border-color: #c9f31d;
   }
   
   .footer__right {
@@ -65,7 +65,7 @@
   
   .footer__social {
     font-size: 1.2rem;
-    color: #81d742;
+    color: #c9f31d;
     text-decoration: none;
     padding: 0.5rem 1rem;
     background-color: #222;
@@ -81,7 +81,7 @@
   }
   
   .footer__social:hover {
-    background-color: #81d742;
+    background-color: #c9f31d;
     color: #111;
   }
   
@@ -98,7 +98,7 @@
   }
   
   .footer__brand {
-    color: #81d742;
+    color: #c9f31d;
   }
   
   .footer__links {
@@ -116,14 +116,14 @@
   }
   
   .footer__links a:hover {
-    color: #81d742;
+    color: #c9f31d;
   }
   
   .footer__to-top {
     display: inline-block;
     margin-top: 1rem;
     font-size: 1.2rem;
-    color: #81d742;
+    color: #c9f31d;
     text-decoration: underline;
   }
   
