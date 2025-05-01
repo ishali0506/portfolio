@@ -14,7 +14,7 @@ const Header = () => {
       <header className="header-container">
        <div className="header-inner-container">
        <div className="header-left">
-          <h1 className="logo">Portfolio</h1>
+          <h1 className="logo">Ishali.</h1>
         </div>
 
         <nav className="nav">
