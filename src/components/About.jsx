@@ -92,7 +92,7 @@ const About = () => {
       <div className="tabs">
         <button
           className={activeTab === 'experience' ? 'tab-btn active' : 'tab-btn'}
-          onClick={() => setActiveTab('experience')}
+          onClick={() => setActiveTab('experience')}                                                     
         >
           Experience
         </button>

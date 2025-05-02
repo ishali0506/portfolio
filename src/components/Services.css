@@ -11,7 +11,25 @@
   color: #c9f31d;
   margin-bottom: 0.5rem;
 }
+.services-title {
+  font-size: 71px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #c9f31d;
+  position: relative;
+  background: linear-gradient(90deg, #c9f31d 0%, #c9f31d 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-size 1s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
 
+.services-title:hover {
+  background-size: 100% 100%;
+}
 .services-subtitle {
   font-size: 1.2rem;
   color: #ccc;

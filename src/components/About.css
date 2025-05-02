@@ -42,7 +42,6 @@
   flex-wrap: wrap;
 }
 
-/* ✅ Your original tab-btn colors */
 .tab-btn {
   padding: 10px 25px;
   border-radius: 50px;
@@ -55,11 +54,7 @@
   font-size: 18px;
 }
 
-.tab-btn:hover {
-  background: #c9f31d;
-  color: #000;
-}
-
+.tab-btn:hover,
 .tab-btn.active {
   background: #c9f31d;
   color: #000;
@@ -73,73 +68,64 @@
   backdrop-filter: blur(10px);
 }
 
-/* ==== Improved Modern Timeline Cards ==== */
+/* ===================== */
+/* Clean Modern Timeline */
+/* ===================== */
+
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .timeline-item {
   position: relative;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #c9f31d;
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #333;
+  border-radius: 12px;
   padding: 20px 25px;
   text-align: left;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 15px rgba(201, 243, 29, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .timeline-item:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 0 10px #c9f31d, 0 0 20px #00c6ff;
-}
-
-.timeline-dot {
-  position: absolute;
-  left: -12px;
-  top: 42%;
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(135deg, #c9f31d, #00c6ff);
-  border-radius: 50%;
-  box-shadow: 0 0 0px #00c6ff, 0 0 3px #c9f31d;
-  z-index: 2;
-}
-
-/* Add a vertical line behind dots */
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -3px;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(#c9f31d, #00c6ff);
-  z-index: 1;
-  border-radius: 2px;
+  border-color: #c9f31d;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .timeline-content h4 {
   color: #c9f31d;
-  font-size: 1.5rem;
-  margin-bottom: 8px;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
 }
 
 .timeline-content h4 span {
-  font-size: 0.9rem;
-  color: #00c6ff;
+  font-size: 0.85rem;
+  color: #aaa;
+  font-weight: 400;
   display: block;
   margin-top: 4px;
 }
 
 .timeline-content p {
-  color: #ddd;
+  color: #ccc;
   margin: 0;
   line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Subtle thin left border for visual alignment */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 3px;
+  height: 70%;
+  background: #c9f31d;
+  opacity: 0.4;
+  border-radius: 2px;
 }
 
 /* ==== Skills Cards (same as before) ==== */
@@ -176,7 +162,10 @@
 }
 
 
-/* ==== Responsive ==== */
+
+/* ===================== */
+/* Responsive Tuning */
+/* ===================== */
 @media (max-width: 1024px) {
   .about-title {
     font-size: 3.5rem;
@@ -202,23 +191,14 @@
     font-size: 14px;
     padding: 8px 16px;
   }
-
-  .timeline-item {
-    padding: 15px;
-  }
-
-  .timeline-content h4 {
-    font-size: 1.2rem;
-  }
   .about-section {
- 
     padding: 60px 15px;
-}
-.skills-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-}
-.tab-container {
-  padding: 14px;
-}
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .tab-container {
+    padding: 14px;
+  }
 }

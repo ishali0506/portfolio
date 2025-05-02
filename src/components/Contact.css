@@ -9,20 +9,32 @@
   .contact-container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #333;
+    background-color: #121212;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
+}
   
+
   .contact-title {
     font-size: 2.5rem;
-    color: #c9f31d;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #c9f31d;
+    position: relative;
+    background: linear-gradient(90deg, #c9f31d 0%, #c9f31d 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-size 1s ease;
+    cursor: pointer;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
   
+    .contact-title:hover {
+    background-size: 100% 100%;
+  }
   .contact-subtitle {
     font-size: 1rem;
     margin-bottom: 30px;
